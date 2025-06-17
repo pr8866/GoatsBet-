@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoatsBet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎰 GoatsBet 🎲</h1>
+    <p>Ganhe até <strong>R$500</strong> na primeira aposta!</p>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Cadastro</h2>
+      <input type="text" placeholder="Nome completo" />
+      <input type="email" placeholder="E-mail" />
+      <input type="text" placeholder="Telefone" />
+      <input type="text" placeholder="CPF" />
+      <input type="text" placeholder="Nome de usuário" />
+      <input type="number" placeholder="Valor da aposta (R$)" />
+    </section>
+
+    <section class="controle">
+      <h2>Modo de Aposta</h2>
+      <label for="modoRange">Modo Lucro/Perda:</label>
+      <input type="range" id="modoRange" min="-1" max="9" value="5" />
+      <span id="valorModo">5 (Imparcial)</span>
+      <button onclick="salvarConfiguracoes()">Salvar Alterações</button>
+    </section>
+
+    <section class="jogos">
+      <h2>Jogos 3D Disponíveis</h2>
+      <ul>
+        <li>🐯 Jogo do Tigrinho</li>
+        <li>🐇🐯 Rabbit Tiger</li>
+        <li>🐉 Dragão</li>
+        <li>🐂 Touro</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GoatsBet. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
